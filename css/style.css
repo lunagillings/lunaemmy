@@ -674,6 +674,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.row-bottom-padded-md.align-middle {
+  display: flex;
+  flex-wrap: wrap; /* keeps it responsive on smaller screens */
+  align-items: center; /* vertical centering */
+}
+
+
 #fh5co-footer {
   color: rgba(255, 255, 255, 0.6);
 }
