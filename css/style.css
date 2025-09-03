@@ -318,20 +318,23 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 60px 0;
 }
 
+#fh5co-footer {
+padding: 3em 0;
+}
+
 #fh5co-services,
 #fh5co-explore,
 #fh5co-team,
-#fh5co-footer,
 #fh5co-work,
 #fh5co-counters,
 #fh5co-pricing {
-  padding: 8em 0;
+  padding: 8em 0
 }
+
 @media screen and (max-width: 768px) {
   #fh5co-services,
   #fh5co-explore,
   #fh5co-team,
-  #fh5co-footer,
   #fh5co-work,
   #fh5co-counters,
   #fh5co-pricing {
@@ -726,12 +729,12 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 22px;
   color: #fff;
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 #fh5co-footer .copy-right {
   position: relative;
-  padding-top: 20px;
-  margin-top: 40px;
+  padding-top: 10px;
+  margin-top: 20px;
 }
 #fh5co-footer .copy-right > a {
   color: rgba(255, 255, 255, 0.6);
