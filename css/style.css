@@ -681,6 +681,26 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.custom-btn {
+  background-color: #8C7676;
+  border-color: #8C7676;
+  color: #fff;
+  font-weight: bold;
+  padding: 12px 30px;
+  border-radius: 30px; /* makes it pill-shaped */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-btn:hover,
+.custom-btn:focus {
+  background-color: #6f5f5f; /* darker shade on hover */
+  border-color: #6f5f5f;
+  transform: scale(1.05); /* subtle hover grow effect */
+  text-decoration: none;
+  color: #fff;
+}
+
+
 #fh5co-footer {
   color: rgba(255, 255, 255, 0.6);
 }
