@@ -143,15 +143,15 @@
 	// Animations
 	// Home
 	var homeAnimate = function() {
-		if ( $('#fh5co-home').length > 0 ) {	
+		if ( $('#fh5co-intro').length > 0 ) {	
 
-			$('#fh5co-home').waypoint( function( direction ) {
+			$('#fh5co-intro').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
 
 					setTimeout(function() {
-						$('#fh5co-home .to-animate').each(function( k ) {
+						$('#fh5co-intro .to-animate').each(function( k ) {
 							var el = $(this);
 							
 							setTimeout ( function () {

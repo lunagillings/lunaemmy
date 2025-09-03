@@ -247,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#fh5co-home {
+#fh5co-intro {
   background-color: transparent;
   background-size: cover;
   position: relative;
@@ -255,20 +255,20 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 @media screen and (max-width: 480px) {
-  #fh5co-home {
+  #fh5co-intro {
     background-position: center center;
     background-attachment: initial;
   }
 }
-#fh5co-home a {
+#fh5co-intro a {
   color: rgba(255, 255, 255, 0.8) !important;
   text-decoration: underline;
 }
-#fh5co-home a:hover {
+#fh5co-intro a:hover {
   color: #fff;
   text-decoration: none;
 }
-#fh5co-home .gradient {
+#fh5co-intro .gradient {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -277,40 +277,40 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 2;
   background: rgba(0, 0, 0, 0.3);
 }
-#fh5co-home, #fh5co-home .text-wrap {
+#fh5co-intro, #fh5co-intro .text-wrap {
   height: 900px;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-home, #fh5co-home .text-wrap {
+  #fh5co-intro, #fh5co-intro .text-wrap {
     height: 500px;
   }
 }
-#fh5co-home .text-wrap {
+#fh5co-intro .text-wrap {
   display: table;
   width: 100%;
   position: relative;
   z-index: 4;
 }
-#fh5co-home .text-inner {
+#fh5co-intro .text-inner {
   display: table-cell;
   vertical-align: middle;
 }
-#fh5co-home .text-inner h1 {
+#fh5co-intro .text-inner h1 {
   font-size: 60px;
   color: white;
   margin: 0 0 30px 0;
   font-weight: 700;
   line-height: 58px;
 }
-#fh5co-home .text-inner h1 span {
+#fh5co-intro .text-inner h1 span {
   color: #8C7676;
 }
 @media screen and (max-width: 768px) {
-  #fh5co-home .text-inner h1 {
+  #fh5co-intro .text-inner h1 {
     font-size: 40px;
   }
 }
-#fh5co-home .text-inner h2 {
+#fh5co-intro .text-inner h2 {
   font-size: 20px;
   line-height: 30px;
   font-weight: 300;
