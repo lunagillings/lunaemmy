@@ -680,6 +680,17 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center; /* vertical centering */
 }
 
+/* Custom carousel spacing */
+.custom-carousel {
+  margin-top: 40px;   /* space ABOVE carousel (between it and middle div) */
+  margin-bottom: 10px; /* reduce space BELOW carousel */
+}
+
+/* Center the Contact Me button neatly */
+.contact-btn {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
 
 .custom-btn {
   background-color: #8C7676;
