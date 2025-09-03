@@ -141,8 +141,8 @@
 
 
 	// Animations
-	// Home
-	var homeAnimate = function() {
+	// Intro
+	var introAnimate = function() {
 		if ( $('#fh5co-intro').length > 0 ) {	
 
 			$('#fh5co-intro').waypoint( function( direction ) {
@@ -170,18 +170,18 @@
 		}
 	};
 
-	var exploreAnimate = function() {
+	var contactAnimate = function() {
 
-		var explore = $('#fh5co-contact');
-		if ( explore.length > 0 ) {	
+		var contact = $('#fh5co-contact');
+		if ( contact.length > 0 ) {	
 
-			explore.waypoint( function( direction ) {
+			contact.waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
 
 					setTimeout(function() {
-						explore.find('.to-animate').each(function( k ) {
+						contact.find('.to-animate').each(function( k ) {
 							var el = $(this);
 							
 							setTimeout ( function () {
@@ -192,7 +192,7 @@
 					}, 200);
 
 					setTimeout(function() {
-						explore.find('.to-animate-2').each(function( k ) {
+						contact.find('.to-animate-2').each(function( k ) {
 							var el = $(this);
 							
 							setTimeout ( function () {
@@ -203,7 +203,7 @@
 					}, 700);
 
 					setTimeout(function() {
-						explore.find('.to-animate-3').each(function( k ) {
+						contact.find('.to-animate-3').each(function( k ) {
 							var el = $(this);
 							
 							setTimeout ( function () {
@@ -304,20 +304,20 @@
 	};
 
 
-	var servicesAnimate = function() {
-		var services = $('#fh5co-resume');
-		if ( services.length > 0 ) {	
+	var resumeAnimate = function() {
+		var resume = $('#fh5co-resume');
+		if ( resume.length > 0 ) {	
 
-			services.waypoint( function( direction ) {
+			resume.waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
 
-					var sec = services.find('.to-animate').length,
+					var sec = resume.find('.to-animate').length,
 						sec = parseInt((sec * 200) + 400);
 
 					setTimeout(function() {
-						services.find('.to-animate').each(function( k ) {
+						resume.find('.to-animate').each(function( k ) {
 							var el = $(this);
 							
 							setTimeout ( function () {
@@ -328,7 +328,7 @@
 					}, 200);
 
 					setTimeout(function() {
-						services.find('.to-animate-2').each(function( k ) {
+						resume.find('.to-animate-2').each(function( k ) {
 							var el = $(this);
 							
 							setTimeout ( function () {
@@ -450,11 +450,11 @@
 		navigationSection();
 		
 		// Animations
-		homeAnimate();
-		exploreAnimate();
+		introAnimate();
+		contactAnimate();
 		gettingStartedAnimate();
 		pricingAnimate();
-		servicesAnimate();
+		resumeAnimate();
 		teamAnimate();
 		footerAnimate();
 		counter();
