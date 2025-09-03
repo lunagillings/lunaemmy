@@ -322,7 +322,7 @@ h1, h2, h3, h4, h5, h6 {
 padding: 3em 0;
 }
 
-#fh5co-services,
+#fh5co-resume,
 #fh5co-explore,
 #fh5co-team,
 #fh5co-work,
@@ -332,7 +332,7 @@ padding: 3em 0;
 }
 
 @media screen and (max-width: 768px) {
-  #fh5co-services,
+  #fh5co-resume,
   #fh5co-explore,
   #fh5co-team,
   #fh5co-work,
@@ -342,7 +342,7 @@ padding: 3em 0;
   }
 }
 
-#fh5co-services {
+#fh5co-resume {
   padding-bottom: 0;
 }
 

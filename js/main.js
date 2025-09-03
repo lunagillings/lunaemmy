@@ -305,7 +305,7 @@
 
 
 	var servicesAnimate = function() {
-		var services = $('#fh5co-services');
+		var services = $('#fh5co-resume');
 		if ( services.length > 0 ) {	
 
 			services.waypoint( function( direction ) {
