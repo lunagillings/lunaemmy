@@ -172,7 +172,7 @@
 
 	var exploreAnimate = function() {
 
-		var explore = $('#fh5co-explore');
+		var explore = $('#fh5co-contact');
 		if ( explore.length > 0 ) {	
 
 			explore.waypoint( function( direction ) {
