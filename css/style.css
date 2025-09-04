@@ -597,43 +597,115 @@ section,
 }
 
 /* =========================
-   Mobile adjustments for all images and text
+   MOBILE FRIENDLY OVERRIDES (≤768px)
    ========================= */
+
 @media screen and (max-width: 768px) {
 
-  /* Make all images responsive and centered */
-  #fh5co-intro img,
-  #fh5co-resume img {
-    max-width: 90%;       /* shrink image to fit mobile screen */
-    height: auto;         /* maintain aspect ratio */
-    display: block;       /* ensure it's block-level */
-    margin: 0 auto 20px;  /* center with bottom spacing */
+  /* Base text adjustments */
+  body {
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 0 10px; /* prevent text from touching edges */
   }
 
-  /* Center all text under images */
-  #fh5co-intro .text-inner,
-  #fh5co-resume .col-md-6 {
-    text-align: center;
+  h1, h2 {
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin-bottom: 0.6em;
   }
 
-  /* Shrink first section text (h1 and h2) */
+  h3, h4, h5, h6 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Navbar dots/bullets */
+  #fh5co-header #navbar {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
+  #fh5co-header #navbar li {
+    margin: 0 8px;
+  }
+
+  /* Intro section */
+  #fh5co-intro,
+  #fh5co-intro .text-wrap {
+    height: auto;             /* allow height to adjust */
+    padding: 40px 15px 30px;  /* smaller top & bottom padding */
+    max-width: 100%;
+    overflow-x: hidden;
+    text-align: center;       /* center all text */
+  }
+
+  #fh5co-intro .text-inner {
+    display: block;           /* remove table-cell for responsive stacking */
+  }
+
   #fh5co-intro .text-inner h1 {
     font-size: 28px;
     line-height: 1.2;
+    margin-bottom: 15px;
   }
+
   #fh5co-intro .text-inner h2 {
     font-size: 16px;
     margin-bottom: 20px;
   }
 
-  /* Ensure containers don’t overflow horizontally */
-  #fh5co-intro,
+  /* Images */
+  #fh5co-intro img,
+  #fh5co-resume img,
+  .carousel-inner > .item > img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  /* Resume section adjustments */
+  #fh5co-resume .col-md-6 {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  /* Carousel spacing */
+  .custom-carousel {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* Buttons */
+  .custom-btn,
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 25px;
+  }
+
+  /* Section spacing */
+  section,
   #fh5co-resume,
-  #fh5co-intro .text-wrap,
-  #fh5co-resume .row-bottom-padded-md {
-    max-width: 100%;
-    overflow-x: hidden;
-    padding-left: 15px;
-    padding-right: 15px;
+  #fh5co-contact,
+  #fh5co-explore,
+  #fh5co-team,
+  #fh5co-work,
+  #fh5co-counters,
+  #fh5co-pricing {
+    padding: 3em 0;
+  }
+
+  /* Footer spacing */
+  #fh5co-footer {
+    padding: 3em 0;
+    color: rgba(255, 255, 255, 0.6);
   }
 }
