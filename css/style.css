@@ -228,10 +228,13 @@ h1, h2, h3, h4, h5, h6 {
     background-color: transparent;
   }
 }
+
 #fh5co-header .navbar-default {
   border: transparent;
   background: transparent;
   margin: 0;
+  padding-top: 1em; 
+  padding-bottom: 1em;
   padding-left: 50px;
   padding-right: 50px;
   -webkit-border-radius: 0px;
@@ -322,6 +325,7 @@ h1, h2, h3, h4, h5, h6 {
 padding: 3em 0;
 }
 
+section,
 #fh5co-resume,
 #fh5co-contact,
 #fh5co-explore,
@@ -329,10 +333,11 @@ padding: 3em 0;
 #fh5co-work,
 #fh5co-counters,
 #fh5co-pricing {
-  padding: 8em 0
+  padding: 5em 0
 }
 
 @media screen and (max-width: 768px) {
+  section,
   #fh5co-resume,
   #fh5co-contact,
   #fh5co-explore,
@@ -342,10 +347,6 @@ padding: 3em 0;
   #fh5co-pricing {
     padding: 3em 0;
   }
-}
-
-#fh5co-resume {
-  padding-bottom: 0;
 }
 
 #fh5co-contact {
@@ -725,6 +726,15 @@ img {
   color: #fff;
 }
 
+#fh5co-footer {
+  padding: 5em 0; /* match sections */
+}
+
+@media screen and (max-width: 768px) {
+  #fh5co-footer {
+    padding: 3em 0;
+  }
+}
 
 #fh5co-footer {
   color: rgba(255, 255, 255, 0.6);
@@ -1051,17 +1061,6 @@ img {
     margin-bottom: 30px;
   }
 
-  /* Section spacing */
-  #fh5co-resume,
-  #fh5co-contact,
-  #fh5co-explore,
-  #fh5co-team,
-  #fh5co-work,
-  #fh5co-counters,
-  #fh5co-pricing {
-    padding: 2.5em 0;
-  }
-
   /* Carousel images */
   .carousel-inner > .item > img {
     width: 100%;
@@ -1096,11 +1095,6 @@ img {
     width: 60%;
   }
 
-  /* Footer spacing */
-  #fh5co-footer {
-    padding: 2em 0;
-    text-align: center;
-  }
   #fh5co-footer .contact-info li {
     font-size: 14px;
     padding-left: 0;
