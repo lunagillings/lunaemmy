@@ -278,11 +278,25 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-intro, #fh5co-intro .text-wrap {
   height: 900px;
 }
+
 @media screen and (max-width: 768px) {
   #fh5co-intro, #fh5co-intro .text-wrap {
-    height: 500px;
+    height: auto;             /* let the content dictate height */
+    padding: 40px 15px 30px;  /* smaller top & bottom padding */
+  }
+
+  #fh5co-intro .text-inner h1 {
+    font-size: 28px;          /* smaller, readable */
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  #fh5co-intro .text-inner h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
   }
 }
+
 #fh5co-intro .text-wrap {
   display: table;
   width: 100%;
@@ -329,21 +343,6 @@ section,
 #fh5co-counters,
 #fh5co-pricing {
   padding: 5em 0
-}
-
-/* Add vertical space between image and text when stacked on mobile */
-@media screen and (max-width: 768px) {
-  /* Cover both possible section IDs */
-  #fh5co-resume .col-md-6.to-animate,
-  #fh5co-services .col-md-6.to-animate {
-    margin-top: 1.25em; /* tweak to taste */
-  }
-
-  /* Optional: only add margin if a .col-md-6 follows another .col-md-6 */
-  #fh5co-resume .col-md-6 + .col-md-6,
-  #fh5co-services .col-md-6 + .col-md-6 {
-    margin-top: 1.25em;
-  }
 }
 
 
@@ -525,6 +524,7 @@ section,
     font-size: 14px;
     line-height: 1.5;
   }
+}
 
   /* Navbar dots/bullets */
   #fh5co-header #navbar {
@@ -537,10 +537,6 @@ section,
   }
 
   /* Intro section */
-  #fh5co-intro, #fh5co-intro .text-wrap {
-    height: auto;
-    padding: 100px 0 60px; /* reduce tall hero */
-  }
   #fh5co-intro .text-inner h1 {
     font-size: 32px;
     line-height: 1.2;
@@ -582,5 +578,62 @@ section,
   .btn, .custom-btn {
     font-size: 13px;
     padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Force the image to be block-level and add spacing */
+  #fh5co-resume .col-md-6.text-center.to-animate img {
+    display: block !important;
+    margin: 0 auto 20px auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Force spacing above text */
+  #fh5co-resume .col-md-6.to-animate:not(.text-center) {
+    padding-top: 20px !important;
+  }
+}
+
+/* =========================
+   Mobile adjustments for all images and text
+   ========================= */
+@media screen and (max-width: 768px) {
+
+  /* Make all images responsive and centered */
+  #fh5co-intro img,
+  #fh5co-resume img {
+    max-width: 90%;       /* shrink image to fit mobile screen */
+    height: auto;         /* maintain aspect ratio */
+    display: block;       /* ensure it's block-level */
+    margin: 0 auto 20px;  /* center with bottom spacing */
+  }
+
+  /* Center all text under images */
+  #fh5co-intro .text-inner,
+  #fh5co-resume .col-md-6 {
+    text-align: center;
+  }
+
+  /* Shrink first section text (h1 and h2) */
+  #fh5co-intro .text-inner h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+  #fh5co-intro .text-inner h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  /* Ensure containers don’t overflow horizontally */
+  #fh5co-intro,
+  #fh5co-resume,
+  #fh5co-intro .text-wrap,
+  #fh5co-resume .row-bottom-padded-md {
+    max-width: 100%;
+    overflow-x: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
