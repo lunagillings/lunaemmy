@@ -356,6 +356,11 @@ padding: 3em 0;
   padding-bottom: 40px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .fh5co-project .project-grid {
   width: 100%;
   height: 800px;
@@ -992,3 +997,135 @@ padding: 3em 0;
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* ================================
+   MOBILE FRIENDLY OVERRIDES
+   ================================ */
+@media screen and (max-width: 768px) {
+
+  /* Base text adjustments */
+  body {
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 0 10px; /* prevent text touching edges */
+  }
+
+  h1, h2 {
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin-bottom: 0.6em;
+  }
+
+  h3, h4, h5, h6 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* Navbar dots/bullets */
+  #fh5co-header #navbar {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  #fh5co-header #navbar li {
+    margin: 0 8px;
+  }
+
+  /* Intro section */
+  #fh5co-intro, #fh5co-intro .text-wrap {
+    height: auto;
+    padding: 100px 0 60px; /* reduce tall hero */
+  }
+  #fh5co-intro .text-inner h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  #fh5co-intro .text-inner h2 {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  /* Section spacing */
+  #fh5co-resume,
+  #fh5co-contact,
+  #fh5co-explore,
+  #fh5co-team,
+  #fh5co-work,
+  #fh5co-counters,
+  #fh5co-pricing {
+    padding: 2.5em 0;
+  }
+
+  /* Carousel images */
+  .carousel-inner > .item > img {
+    width: 100%;
+    height: auto;
+  }
+  .custom-carousel {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* Buttons */
+  .custom-btn,
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 25px;
+  }
+
+  /* Team / grid sections */
+  .core-features .grid2,
+  .getting-started .getting-grid .desc {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  #fh5co-team .team-box {
+    margin-bottom: 40px;
+    padding: 20px;
+  }
+  #fh5co-team .team-box .user img {
+    width: 60%;
+  }
+
+  /* Footer spacing */
+  #fh5co-footer {
+    padding: 2em 0;
+    text-align: center;
+  }
+  #fh5co-footer .contact-info li {
+    font-size: 14px;
+    padding-left: 0;
+  }
+  #fh5co-footer .contact-info li i {
+    position: static;
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Extra small screens */
+  h1 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 13px;
+  }
+  .btn, .custom-btn {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+}
+
